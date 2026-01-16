@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121212"
+    android:padding="20dp">
+
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select a Message"
+        android:textColor="#FFFFFF"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:columnCount="2"
+        android:rowCount="3"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <Button
+            android:id="@+id/btnMsg1"
+            android:text="👋\nI am Deaf"
+            style="@style/QuickMsgButton"/>
+
+        <Button
+            android:id="@+id/btnMsg2"
+            android:text="✍️\nPlease Write"
+            style="@style/QuickMsgButton"/>
+
+        <Button
+            android:id="@+id/btnMsg3"
+            android:text="🏥\nHospital"
+            style="@style/QuickMsgButton"/>
+
+        <Button
+            android:id="@+id/btnMsg4"
+            android:text="👮\nPolice"
+            style="@style/QuickMsgButton"/>
+
+        <Button
+            android:id="@+id/btnMsg5"
+            android:text="🚽\nRestroom?"
+            style="@style/QuickMsgButton"/>
+
+        <Button
+            android:id="@+id/btnMsg6"
+            android:text="🙏\nThank You"
+            style="@style/QuickMsgButton"/>
+
+    </GridLayout>
+
+    <TextView
+        android:id="@+id/tvFullScreen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFEB3B"
+        android:textColor="#000000"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:text="I am Deaf"
+        android:visibility="gone"
+        android:elevation="10dp"
+        android:clickable="true"
+        android:focusable="true"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
